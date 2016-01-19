@@ -3,7 +3,7 @@
 This github repository contains several files and 2 scripts to create, and install an Ubuntu-Mate desktop environment into an 
 LXC container named CN1.
 
-If you download the .zip file from github (**ciab-lxc-desktop-master.zip**) it contains all of the files you need.
+If you download the .zip file from github (**ciab-lxc-desktop-local-master.zip**) it contains all of the files you need.
 
 Copy the .zip file to some temporary directory on your Host system, change to that directory and then unzip (uncompress) the files.
 
