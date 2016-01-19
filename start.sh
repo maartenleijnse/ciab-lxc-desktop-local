@@ -54,9 +54,9 @@
 # example command to execute on the host after all of this installation is complete would be the
 #         following (assuming the CN1 container address is 10.0.3.72 (your's will probably be different)
 #
-#                   $ Xnest :1 -query 10.0.3.72 
+#                   $ Xnest :1 -query 10.0.3.72
 #
-# the above command does assume you installed Xnest PC/Host ($ sudo apt-get install xnest) !!
+# the above command does assume you installed Xnest on  your PC/Host ($ sudo apt-get install xnest) !!
 #=============================================================================================================
 
 # set location where the installation files were placed when they were UNTarred. I just created a directory 
@@ -158,6 +158,38 @@ echo
 
 sleep 5
 lxc list
+
+echo
+echo
+echo
+echo
+echo "====================================================================================================================="
+echo " Setup is complete!"
+echo " Now you can start your LXC Desktop using either the a terminal command line or by using the included ciab.sh script."
+echo
+echo " In either method you need to know what is the next available 'Session Number' to can assign for your new LXC Desktop"
+echo " to run in."
+echo
+echo " We've included a script which will tell you the next available 'Session Number' to use."
+echo " That script's name is next-free-N.sh so execute it:"
+echo
+echo "             $ ./next-free-N.sh"
+echo
+echo " this will display a message such as: first available display is :1"
+echo
+echo " This is telling you '1' is the next free Session Number you can use.  In the following 'N' is the Session Number"
+echo " and IP-ADDR is the IP address of the CN1 LXC container (see above or execute $ lxc list to get it)"
+echo
+echo " Start your LXC Desktop -"
+echo
+echo " from a Host terminal command line execute:  $ Xnest :N -query IP-ADDR"
+echo " -or-"
+echo " use the 'ciab.sh' script and execute:  $ ./ciab.sh N IP-ADDR"
+echo
+echo " Either method will present you with a new LXC Desktop window where you will be asked to input your Login/Password"
+echo " for your User Account in the CN1 LXC container.   After entering both you will see the Ubuntu-Mate desktop appear."
+echo
+echo
 
 exit 0
 
